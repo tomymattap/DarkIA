@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería — DARK</title>
+    <link rel="icon" type="image/jpeg" href="img/dark_icon.png">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="brand" href="index.html#inicio" aria-label="Ir a inicio">
+                <span class="logo" aria-hidden="true">
+                    <img src="img/dark_logo.png" alt="Logo de DARK" width="40" height="40" />
+                </span>
+                <span class="brand-text">DARK</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu" aria-label="Abrir menú">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+
+            <ul class="nav-menu" id="primaryMenu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#temporadas">Temporadas</a></li>
+                <li><a href="index.html#personajes">Personajes</a></li>
+                <li><a href="galeria.html" aria-current="page">Galería</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="gallery-section">
+            <div class="gallery-header">
+                <h1>Galería</h1>
+                <p class="gallery-subtitle">Imágenes atmosféricas de la serie DARK</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/gallery1.jpg" alt="Escena de la central nuclear de Winden" />
+                    <div class="gallery-caption">
+                        <h3>Central Nuclear</h3>
+                        <p>El corazón de los misterios de Winden</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery2.jpg" alt="Las cuevas misteriosas" />
+                    <div class="gallery-caption">
+                        <h3>Las Cuevas</h3>
+                        <p>Portal entre tiempos y dimensiones</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery3.jpg" alt="El bosque de Winden" />
+                    <div class="gallery-caption">
+                        <h3>El Bosque</h3>
+                        <p>Donde se ocultan los secretos más profundos</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery4.jpg" alt="La iglesia de Winden" />
+                    <div class="gallery-caption">
+                        <h3>La Iglesia</h3>
+                        <p>Testigo silencioso de los ciclos del tiempo</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery5.jpg" alt="La casa de los Kahnwald" />
+                    <div class="gallery-caption">
+                        <h3>Casa Kahnwald</h3>
+                        <p>Centro de los acontecimientos familiares</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery6.jpg" alt="La escuela de Winden" />
+                    <div class="gallery-caption">
+                        <h3>La Escuela</h3>
+                        <p>Donde todo comenzó para los jóvenes</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery7.jpg" alt="El lago de Winden" />
+                    <div class="gallery-caption">
+                        <h3>El Lago</h3>
+                        <p>Reflejo de las verdades ocultas</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery8.jpg" alt="La estación de tren" />
+                    <div class="gallery-caption">
+                        <h3>Estación de Tren</h3>
+                        <p>Conectando pasado, presente y futuro</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/gallery9.jpg" alt="La casa de los Nielsen" />
+                    <div class="gallery-caption">
+                        <h3>Casa Nielsen</h3>
+                        <p>Hogar de secretos familiares</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small class="legales">Sitio de fanes. No oficial. © <span id="year"></span></small>
+            <ul class="social-links" aria-label="Redes sociales">
+                <li>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4 4l7.3 8.3L4 20h3.3l6-6.6L18.7 20H20l-7.1-8 6.7-8H16.3l-5.4 6L6 4H4z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm11 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0114.5 6H17V2h-3.5A4.5 4.5 0 009 6.5V10H6v4h3v8h4z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M23.5 7.5a3 3 0 00-2.1-2.2C19.7 4.8 12 4.8 12 4.8s-7.7 0-9.4.5A3 3 0 00.5 7.5 31.4 31.4 0 000 12a31.4 31.4 0 00.5 4.5 3 3 0 002.1 2.2c1.7.5 9.4.5 9.4.5s7.7 0 9.4-.5a3 3 0 002.1-2.2c.3-1.6.5-3 .5-4.5s-.2-3-.5-4.5zM9.8 15.2V8.8L15.5 12l-5.7 3.2z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
