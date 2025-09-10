@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK — Sitio no oficial</title>
+    <link rel="icon" type="image/jpeg" href="img/dark_icon.png">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Principal">
+            <a class="brand" href="#inicio" aria-label="Ir a inicio">
+                <span class="logo" aria-hidden="true">
+                    <img src="img/dark_logo.png" alt="Logo de DARK" width="40" height="40" />
+                </span>
+                <span class="brand-text">DARK</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu" aria-label="Abrir menú">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+
+            <ul class="nav-menu" id="primaryMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#temporadas">Temporadas</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio" class="site-main">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="synopsis">
+                    <div class="hero-title">
+                        <h1>DARK</h1>
+                        <p class="hero-subtitle">El pasado, el presente y el futuro están conectados</p>
+                    </div>
+                    <div class="synopsis-body" id="synopsisBody">
+                        <p>
+                            <strong>Winden</strong> es una ciudad apacible sacudida por la desaparición de niños. Al desenterrar secretos, cuatro familias descubren vínculos que <strong>trascienden el tiempo</strong> y conectan pasado, presente y futuro.
+                        </p>
+                        <p>
+                            Cuando los destinos se entrelazan en ciclos repetidos, los protagonistas enfrentan <strong>sus propios demonios</strong> y un enigma que cuestiona la naturaleza del <strong>tiempo</strong> y la <strong>identidad</strong>.
+                        </p>
+                        <p>
+                            Con un tono sombrío y una narrativa laberíntica, <strong>DARK</strong> invita a mirar más allá de lo evidente: cada elección tiene un eco, y cada personaje guarda una pieza del <strong>rompecabezas</strong> que une las generaciones.
+                        </p>
+                        <p>
+                            La <strong>central nuclear</strong>, las <strong>cuevas</strong> y el <strong>bosque</strong> son escenarios simbólicos donde se anudan los hilos del pasado y el futuro. Lo casual revela un <strong>ciclo</strong> que insiste en repetirse.
+                        </p>
+                        <p>
+                            Entre profecías, diarios y máquinas imposibles, las familias <strong>Nielsen</strong>, <strong>Doppler</strong>, <strong>Tiedemann</strong> y <strong>Kahnwald</strong> descubren que su historia está escrita a través de los años. <strong>Nadie es solo quien cree ser</strong>.
+                        </p>
+                    </div>
+                    <button id="synopsisToggle" class="synopsis-toggle" aria-expanded="false" aria-controls="synopsisBody" type="button">Ver más</button>
+                </div>
+                <div class="hero-image">
+                    <img src="img\dark_img.jpg" alt="Imagen atmosférica inspirada en DARK" />
+                </div>
+            </div>
+        </section>
+
+        <section id="temporadas" class="placeholder-section section-band" aria-label="Temporadas">
+            <h2>Temporadas</h2>
+            <div class="seasons-grid">
+                    <article class="season-card" aria-labelledby="t1">
+                        <div class="season-image">
+                            <img src="img\poster_season1.jpg" alt="Imagen característica de la Temporada 1" />
+                        </div>
+                        <header class="season-header">
+                            <h3 id="t1">Temporada 1</h3>
+                            <small>10 episodios</small>
+                            <button class="season-toggle" type="button" aria-expanded="false" aria-controls="ep-s1">Ver episodios</button>
+                        </header>
+                        <ol class="episodes" id="ep-s1">
+                            <li><a href="#s1e1" title="Ver sinopsis del episodio 1">Secretos</a></li>
+                            <li><a href="#s1e2" title="Ver sinopsis del episodio 2">Mentiras</a></li>
+                            <li><a href="#s1e3" title="Ver sinopsis del episodio 3">Pasado y presente</a></li>
+                            <li><a href="#s1e4" title="Ver sinopsis del episodio 4">Doble vida</a></li>
+                            <li><a href="#s1e5" title="Ver sinopsis del episodio 5">Verdades</a></li>
+                            <li><a href="#s1e6" title="Ver sinopsis del episodio 6">Sic mundus creatus est</a></li>
+                            <li><a href="#s1e7" title="Ver sinopsis del episodio 7">Encrucijadas</a></li>
+                            <li><a href="#s1e8" title="Ver sinopsis del episodio 8">Lo que se siembra se cosecha</a></li>
+                            <li><a href="#s1e9" title="Ver sinopsis del episodio 9">Todo es ahora</a></li>
+                            <li><a href="#s1e10" title="Ver sinopsis del episodio 10">Alfa y omega</a></li>
+                        </ol>
+                    </article>
+
+                    <article class="season-card" aria-labelledby="t2">
+                        <div class="season-image">
+                            <img src="img\poster_season2.jpg" alt="Imagen característica de la Temporada 2" />
+                        </div>
+                        <header class="season-header">
+                            <h3 id="t2">Temporada 2</h3>
+                            <small>8 episodios</small>
+                            <button class="season-toggle" type="button" aria-expanded="false" aria-controls="ep-s2">Ver episodios</button>
+                        </header>
+                        <ol class="episodes" id="ep-s2">
+                            <li><a href="#s2e1" title="Ver sinopsis del episodio 1">Principios y finales</a></li>
+                            <li><a href="#s2e2" title="Ver sinopsis del episodio 2">Lugares lejanos</a></li>
+                            <li><a href="#s2e3" title="Ver sinopsis del episodio 3">Fantasmas</a></li>
+                            <li><a href="#s2e4" title="Ver sinopsis del episodio 4">Los viajeros</a></li>
+                            <li><a href="#s2e5" title="Ver sinopsis del episodio 5">Perdidos y encontrados</a></li>
+                            <li><a href="#s2e6" title="Ver sinopsis del episodio 6">Un ciclo para todo</a></li>
+                            <li><a href="#s2e7" title="Ver sinopsis del episodio 7">El diablo blanco</a></li>
+                            <li><a href="#s2e8" title="Ver sinopsis del episodio 8">Fin y principio</a></li>
+                        </ol>
+                    </article>
+
+                    <article class="season-card" aria-labelledby="t3">
+                        <div class="season-image">
+                            <img src="img\poster_season3.jpg" alt="Imagen característica de la Temporada 3" />
+                        </div>
+                        <header class="season-header">
+                            <h3 id="t3">Temporada 3</h3>
+                            <small>8 episodios</small>
+                            <button class="season-toggle" type="button" aria-expanded="false" aria-controls="ep-s3">Ver episodios</button>
+                        </header>
+                        <ol class="episodes" id="ep-s3">
+                            <li><a href="#s3e1" title="Ver sinopsis del episodio 1">Deja-vu</a></li>
+                            <li><a href="#s3e2" title="Ver sinopsis del episodio 2">Los sobrevivientes</a></li>
+                            <li><a href="#s3e3" title="Ver sinopsis del episodio 3">Adán y Eva</a></li>
+                            <li><a href="#s3e4" title="Ver sinopsis del episodio 4">El origen</a></li>
+                            <li><a href="#s3e5" title="Ver sinopsis del episodio 5">Vida y muerte</a></li>
+                            <li><a href="#s3e6" title="Ver sinopsis del episodio 6">Luz y sombra</a></li>
+                            <li><a href="#s3e7" title="Ver sinopsis del episodio 7">Entre el tiempo</a></li>
+                            <li><a href="#s3e8" title="Ver sinopsis del episodio 8">El paraíso</a></li>
+                        </ol>
+                    </article>
+            </div>
+        </section>
+
+
+
+        <section id="contacto" class="placeholder-section" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <div class="contact-card">
+                <form id="contactForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="form-field form-field-full">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                        </div>
+                        <div class="form-field form-field-full">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar</button>
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small class="legales">Sitio de fanes. No oficial. © <span id="year"></span></small>
+            <ul class="social-links" aria-label="Redes sociales">
+                <li>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4 4l7.3 8.3L4 20h3.3l6-6.6L18.7 20H20l-7.1-8 6.7-8H16.3l-5.4 6L6 4H4z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm11 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0114.5 6H17V2h-3.5A4.5 4.5 0 009 6.5V10H6v4h3v8h4z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M23.5 7.5a3 3 0 00-2.1-2.2C19.7 4.8 12 4.8 12 4.8s-7.7 0-9.4.5A3 3 0 00.5 7.5 31.4 31.4 0 000 12a31.4 31.4 0 00.5 4.5 3 3 0 002.1 2.2c1.7.5 9.4.5 9.4.5s7.7 0 9.4-.5a3 3 0 002.1-2.2c.3-1.6.5-3 .5-4.5s-.2-3-.5-4.5zM9.8 15.2V8.8L15.5 12l-5.7 3.2z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
+
+
