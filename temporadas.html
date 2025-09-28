@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DARK — Temporadas</title>
+    <title>Temporadas — DARK</title>
     <link rel="icon" type="image/jpeg" href="img/dark_icon.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Principal">
-            <a class="brand" href="index.html" aria-label="Ir a inicio">
+            <a class="brand" href="index.html#inicio" aria-label="Ir a inicio">
                 <span class="logo" aria-hidden="true">
                     <img src="img/dark_logo.png" alt="Logo de DARK" width="40" height="40" />
                 </span>
@@ -29,7 +29,7 @@
             <ul class="nav-menu" id="primaryMenu">
                 <li><a href="index.html">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="temporadas.html" class="active">Temporadas</a>
+                    <a href="temporadas.html" aria-current="page">Temporadas</a>
                     <ul class="dropdown-menu">
                         <li><a href="temporadas/temporada1.html">Temporada 1</a></li>
                         <li><a href="temporadas/temporada2.html">Temporada 2</a></li>
@@ -43,48 +43,66 @@
         </nav>
     </header>
 
-    <main id="inicio" class="site-main">
-        <section id="temporadas" class="placeholder-section section-band" aria-label="Temporadas">
+    <main class="site-main">
+        <section class="placeholder-section" aria-label="Temporadas">
             <h2>Temporadas</h2>
             <div class="seasons-grid">
-                    <article class="season-card" aria-labelledby="t1">
-                        <a href="temporadas/temporada1.html" class="season-link-style">
-                            <div class="season-image season-image-large">
-                                <img src="img/poster_season1.jpg" alt="Imagen característica de la Temporada 1" />
-                            </div>
-                            <header class="season-header">
-                                <h3 id="t1">Temporada 1</h3>
-                                <small>10 episodios</small>
-                            </header>
+                <article class="season-card" aria-labelledby="t1">
+                    <div class="season-image">
+                        <a href="temporadas/temporada1.html">
+                            <img src="img/poster_season1.jpg" alt="Imagen característica de la Temporada 1" />
                         </a>
-                        <p class="season-description">La desaparición de un niño en el pueblo de Winden abre un abismo que tuerce el concepto del <strong>tiempo</strong>. Los secretos de cuatro familias se entrelazan en una caza desesperada por la <strong>verdad</strong>, donde el pasado, el presente y el futuro están inexplicablemente <strong>conectados</strong>.</p>
-                    </article>
+                    </div>
+                    <header class="season-header">
+                        <h3 id="t1"><a href="temporadas/temporada1.html" class="season-link-style">Temporada 1</a></h3>
+                        <small>10 episodios</small>
+                    </header>
+                    <div class="episodes-container">
+                        <ol class="episodes" id="ep-s1">
+                            <li><a href="temporadas/temporada1.html#s1e1">Secretos</a></li>
+                            <li><a href="temporadas/temporada1.html#s1e2">Mentiras</a></li>
+                            <li><a href="temporadas/temporada1.html#s1e3">Pasado y presente</a></li>
+                        </ol>
+                    </div>
+                </article>
 
-                    <article class="season-card" aria-labelledby="t2">
-                        <a href="temporadas/temporada2.html" class="season-link-style">
-                            <div class="season-image season-image-large">
-                                <img src="img/poster_season2.jpg" alt="Imagen característica de la Temporada 2" />
-                            </div>
-                            <header class="season-header">
-                                <h3 id="t2">Temporada 2</h3>
-                                <small>8 episodios</small>
-                            </header>
+                <article class="season-card" aria-labelledby="t2">
+                    <div class="season-image">
+                        <a href="temporadas/temporada2.html">
+                            <img src="img/poster_season2.jpg" alt="Imagen característica de la Temporada 2" />
                         </a>
-                        <p class="season-description">La cuenta atrás para el <strong>apocalipsis</strong> ha comenzado. Jonas se encuentra atrapado en el <strong>futuro</strong> y trata desesperadamente de volver a 2020. Mientras tanto, sus amigos investigan los misterios que dejó el <strong>viajero del tiempo</strong>, descubriendo un complot que abarca varias <strong>generaciones</strong>.</p>
-                    </article>
+                    </div>
+                    <header class="season-header">
+                        <h3 id="t2"><a href="temporadas/temporada2.html" class="season-link-style">Temporada 2</a></h3>
+                        <small>8 episodios</small>
+                    </header>
+                    <div class="episodes-container">
+                        <ol class="episodes" id="ep-s2">
+                            <li><a href="temporadas/temporada2.html#s2e1">Principios y finales</a></li>
+                            <li><a href="temporadas/temporada2.html#s2e2">Lugares lejanos</a></li>
+                            <li><a href="temporadas/temporada2.html#s2e3">Fantasmas</a></li>
+                        </ol>
+                    </div>
+                </article>
 
-                    <article class="season-card" aria-labelledby="t3">
-                        <a href="temporadas/temporada3.html" class="season-link-style">
-                            <div class="season-image season-image-large">
-                                <img src="img/poster_season3.jpg" alt="Imagen característica de la Temporada 3" />
-                            </div>
-                            <header class="season-header">
-                                <h3 id="t3">Temporada 3</h3>
-                                <small>8 episodios</small>
-                            </header>
+                <article class="season-card" aria-labelledby="t3">
+                    <div class="season-image">
+                        <a href="temporadas/temporada3.html">
+                            <img src="img/poster_season3.jpg" alt="Imagen característica de la Temporada 3" />
                         </a>
-                        <p class="season-description">El <strong>fin</strong> es el <strong>principio</strong> y el principio es el fin. El <strong>ciclo</strong> se completa, pero un <strong>nuevo mundo</strong> entra en juego, complicando aún más la ya enrevesada trama. Los lazos familiares se ponen a prueba y el <strong>destino</strong> de todos los habitantes de Winden pende de un hilo.</p>
-                    </article>
+                    </div>
+                    <header class="season-header">
+                        <h3 id="t3"><a href="temporadas/temporada3.html" class="season-link-style">Temporada 3</a></h3>
+                        <small>8 episodios</small>
+                    </header>
+                    <div class="episodes-container">
+                        <ol class="episodes" id="ep-s3">
+                            <li><a href="temporadas/temporada3.html#s3e1">Deja-vu</a></li>
+                            <li><a href="temporadas/temporada3.html#s3e2">Los sobrevivientes</a></li>
+                            <li><a href="temporadas/temporada3.html#s3e3">Adán y Eva</a></li>
+                        </ol>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -95,29 +113,29 @@
             <ul class="social-links" aria-label="Redes sociales">
                 <li>
                     <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M4 4l7.3 8.3L4 20h3.3l6-6.6L18.7 20H20l-7.1-8 6.7-8H16.3l-5.4 6L6 4H4z"/>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4 4l7.3 8.3L4 20h3.3l6-6.6L18.7 20H20l-7.1-8 6.7-8H16.3l-5.4 6L6 4H4z" fill="currentColor"/>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm11 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm11 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0114.5 6H17V2h-3.5A4.5 4.5 0 009 6.5V10H6v4h3v8h4z"/>
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M13 22v-8h3l1-4h-4V7.5A1.5 1.5 0 0114.5 6H17V2h-3.5A4.5 4.5 0 009 6.5V10H6v4h3v8h4z"/>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M23.5 7.5a3 3 0 00-2.1-2.2C19.7 4.8 12 4.8 12 4.8s-7.7 0-9.4.5A3 3 0 00.5 7.5 31.4 31.4 0 000 12a31.4 31.4 0 00.5 4.5 3 3 0 002.1 2.2c1.7.5 9.4.5 9.4.5s7.7 0 9.4-.5a3 3 0 002.1-2.2c.3-1.6.5-3 .5-4.5s-.2-3-.5-4.5zM9.8 15.2V8.8L15.5 12l-5.7 3.2z"/>
+                        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M23.5 7.5a3 3 0 00-2.1-2.2C19.7 4.8 12 4.8 12 4.8s-7.7 0-9.4.5A3 3 0 00.5 7.5 31.4 31.4 0 000 12a31.4 31.4 0 00.5 4.5 3 3 0 002.1 2.2c1.7.5 9.4.5 9.4.5s7.7 0 9.4-.5a3 3 0 002.1-2.2c.3-1.6.5-3 .5-4.5s-.2-3-.5-4.5zM9.8 15.2V8.8L15.5 12l-5.7 3.2z"/>
                         </svg>
                     </a>
                 </li>
