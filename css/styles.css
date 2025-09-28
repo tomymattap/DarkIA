@@ -474,6 +474,8 @@ body {
     }
 
     .floating-button {
+        padding: 10px 15px;
+        font-size: 14px;
         bottom: 80px; /* Adjust position to be above footer on mobile */
     }
 
@@ -638,7 +640,9 @@ body {
     white-space: nowrap;
 }
 .season-image-large {
-    height: 350px;
+    height: 450px;
+    border-radius: 14px;
+    overflow: hidden;
 }
 .season-description {
     font-size: 1.05rem;
@@ -648,6 +652,10 @@ body {
 .season-description strong {
     color: var(--accent);
     font-weight: 600;
+}
+
+.episodes-container {
+    margin-top: 20px;
 }
 
 .floating-button {
@@ -669,4 +677,117 @@ body {
 .floating-button:hover {
     background-color: #f40612; /* Slightly lighter red on hover */
     transform: translateY(-2px);
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1001; /* Above floating button */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-image {
+    width: 50vw; /* Even smaller width for better quality */
+    height: 50vh; /* Height remains the same */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.lightbox-caption {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev-button,
+.next-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.prev-button {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next-button {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.season-subpage-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (max-width: 720px) {
+    .season-subpage-layout {
+        grid-template-columns: 1fr;
+    }
 }

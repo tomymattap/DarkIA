@@ -53,7 +53,9 @@
             <div class="characters-grid">
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\jonas_kahnwald.webp" alt="Jonas Kahnwald" />
+                        <a href="img\personajes\jonas_kahnwald.webp" data-lightbox="gallery" data-title="Jonas Kahnwald">
+                            <img src="img\personajes\jonas_kahnwald.webp" alt="Jonas Kahnwald" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Jonas Kahnwald</h3>
@@ -70,7 +72,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\martha_nielsen.webp" alt="Martha Nielsen" />
+                        <a href="img\personajes\martha_nielsen.webp" data-lightbox="gallery" data-title="Martha Nielsen">
+                            <img src="img\personajes\martha_nielsen.webp" alt="Martha Nielsen" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Martha Nielsen</h3>
@@ -87,7 +91,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\ulrich_nielsen.webp" alt="Ulrich Nielsen" />
+                        <a href="img\personajes\ulrich_nielsen.webp" data-lightbox="gallery" data-title="Ulrich Nielsen">
+                            <img src="img\personajes\ulrich_nielsen.webp" alt="Ulrich Nielsen" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Ulrich Nielsen</h3>
@@ -104,7 +110,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\charlotte_doppler.webp" alt="Charlotte Doppler" />
+                        <a href="img\personajes\charlotte_doppler.webp" data-lightbox="gallery" data-title="Charlotte Doppler">
+                            <img src="img\personajes\charlotte_doppler.webp" alt="Charlotte Doppler" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Charlotte Doppler</h3>
@@ -121,7 +129,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\hannah_kahnwald.webp" alt="Hannah Kahnwald" />
+                        <a href="img\personajes\hannah_kahnwald.webp" data-lightbox="gallery" data-title="Hannah Kahnwald">
+                            <img src="img\personajes\hannah_kahnwald.webp" alt="Hannah Kahnwald" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Hannah Kahnwald</h3>
@@ -138,7 +148,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\mikkel_nielsen.webp" alt="Mikkel Nielsen" />
+                        <a href="img\personajes\mikkel_nielsen.webp" data-lightbox="gallery" data-title="Mikkel Nielsen">
+                            <img src="img\personajes\mikkel_nielsen.webp" alt="Mikkel Nielsen" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Mikkel Nielsen</h3>
@@ -155,7 +167,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\claudia_tiedemann.webp" alt="Claudia Tiedemann" />
+                        <a href="img\personajes\claudia_tiedemann.webp" data-lightbox="gallery" data-title="Claudia Tiedemann">
+                            <img src="img\personajes\claudia_tiedemann.webp" alt="Claudia Tiedemann" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Claudia Tiedemann</h3>
@@ -172,7 +186,9 @@
 
                 <article class="character-card">
                     <div class="character-image">
-                        <img src="img\personajes\noah.webp" alt="Noah" />
+                        <a href="img\personajes\noah.webp" data-lightbox="gallery" data-title="Noah">
+                            <img src="img\personajes\noah.webp" alt="Noah" />
+                        </a>
                     </div>
                     <div class="character-info">
                         <h3>Noah</h3>
@@ -226,7 +242,19 @@
         </div>
     </footer>
 
+    <!-- Lightbox HTML Structure -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-button">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+            <button class="prev-button">&lt;</button>
+            <button class="next-button">&gt;</button>
+        </div>
+    </div>
+
     <script src="js\script.js"></script>
+    <script src="js\galeria.js"></script>
     <a href="https://www.netflix.com/title/80100172" target="_blank" rel="noopener noreferrer" class="floating-button">Mirar ahora</a>
 </body>
 </html>

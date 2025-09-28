@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeButton = document.querySelector('.close-button');
     const prevButton = document.querySelector('.prev-button');
     const nextButton = document.querySelector('.next-button');
-    const galleryItems = document.querySelectorAll('.gallery-grid a[data-lightbox="gallery"]');
+    const galleryItems = document.querySelectorAll('[data-lightbox="gallery"]');
 
     let currentIndex = 0;
 
