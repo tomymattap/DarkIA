@@ -14,6 +14,9 @@ body {
     font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     background: linear-gradient(180deg, var(--bg) 0%, #0e1013 100%);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .visually-hidden {
@@ -33,7 +36,7 @@ body {
     border-bottom: 1px solid #1b1f25;
 }
 .navbar {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -48,14 +51,15 @@ body {
     text-decoration: none;
     font-weight: 800;
     letter-spacing: 6px;
+    margin-left: 20px; /* Added to shift logo to the right */
 }
 .brand .logo { display: inline-flex; }
 .brand .logo img {
-    width: 40px;
-    height: 40px;
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
     object-fit: contain;
 }
-.brand-text { font-size: 26px; }
+.brand-text { font-size: 26px; display: none; }
 
 .nav-toggle {
     display: none;
@@ -90,7 +94,7 @@ body {
 }
 
 /* Hero */
-.site-main { padding: 32px 20px; }
+.site-main { padding: 32px 0; flex-grow: 1; }
 .hero { max-width: 1200px; margin: 0 auto; }
 .hero-content {
     display: grid;
@@ -209,6 +213,7 @@ body {
     padding: 6px 10px;
     font-size: 0.9rem;
 }
+.season-link-style { color: var(--text-dim); }
 
 .episodes { margin: 0; padding-left: 24px; display: grid; gap: 10px; counter-reset: ep; }
 .episodes li { list-style: none; position: relative; padding-left: 54px; }
@@ -226,12 +231,56 @@ body {
 .episodes a:hover { color: var(--text); text-decoration: underline; }
 
 /* Contacto */
+.contact-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Map on left (smaller), form on right (larger) */
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-section {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.placeholder-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 500px; /* Increased height for map */
+    position: relative;
+    height: 0;
+    border-radius: 14px;
+    border: 1px solid #1b1f25;
+    margin-bottom: 0; /* Remove bottom margin as it's now in a grid */
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 .contact-card {
-    margin-top: 16px;
+    margin-top: 0; /* Remove top margin as it's now in a grid */
     background: #0f1217;
     border: 1px solid #1b1f25;
     border-radius: 14px;
     padding: 20px;
+    min-height: 500px; /* Added to match map height */
 }
 .form-grid {
     display: grid;
@@ -272,6 +321,31 @@ body {
 .btn-primary:hover { background: #273244; }
 .form-status { color: var(--text-dim); margin: 0; }
 
+.contact-layout .placeholder-section {
+    margin-top: 0;
+    padding-top: 0; /* Ensure no top padding */
+}
+
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+        gap: 30px;
+    }
+    .map-container {
+        padding-bottom: 56.25%; /* Revert to 16:9 for full width */
+    }
+    .contact-card {
+        width: 100%; /* Ensure form takes full width on mobile */
+        margin: 0 -20px; /* Compensate for internal padding to match map width */
+    }
+    .contact-section h2,
+    .placeholder-section h2 {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left; /* Ensure left alignment on mobile */
+    }
+}
+
 /* Footer */
 .site-footer {
     margin-top: 56px;
@@ -279,7 +353,7 @@ body {
     background: var(--bg-muted);
 }
 .footer-inner {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -373,7 +447,7 @@ body {
     .seasons-grid { grid-template-columns: 1fr; }
     /* Modo acordeón para episodios en móvil */
     .season-toggle { display: inline-block; }
-    .episodes { display: none; }
+    .episodes { display: grid; }
     .episodes.open { display: grid; }
 
     /* Ver más para sinopsis en móvil */
@@ -394,79 +468,26 @@ body {
         font-size: 0.9rem;
         display: inline-block;
     }
+
+    .site-main {
+        padding: 32px 20px;
+    }
+
+    .floating-button {
+        bottom: 80px; /* Adjust position to be above footer on mobile */
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Adjust gap for vertical stacking */
+    }
+
+    .social-links {
+        margin-top: 10px; /* Add space between legal text and icons */
+    }
 }
 
-/* Galería */
-.gallery-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px 20px;
-}
-
-.gallery-header {
-    text-align: center;
-    margin-bottom: 48px;
-}
-
-.gallery-header h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0 0 16px 0;
-    color: var(--brand);
-    letter-spacing: 4px;
-}
-
-.gallery-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-dim);
-    margin: 0;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 24px;
-}
-
-.gallery-item {
-    background: #0f1217;
-    border: 1px solid #1b1f25;
-    border-radius: 14px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    filter: saturate(.8) contrast(1.1);
-}
-
-.gallery-caption {
-    padding: 20px;
-}
-
-.gallery-caption h3 {
-    margin: 0 0 8px 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text);
-}
-
-.gallery-caption p {
-    margin: 0;
-    color: var(--text-dim);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
 
 /* Personajes */
 .characters-section {
@@ -588,3 +609,64 @@ body {
 }
 
 
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0a0b0d;
+    border: 1px solid #1b1f25;
+    border-radius: 6px;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px 16px;
+    display: block;
+    white-space: nowrap;
+}
+.season-image-large {
+    height: 350px;
+}
+.season-description {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--text-dim);
+}
+.season-description strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #f40612; /* Slightly lighter red on hover */
+    transform: translateY(-2px);
+}
