@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DARK — Sitio no oficial</title>
-    <link rel="icon" type="image/jpeg" href="img/dark_icon.png">
-    <link rel="stylesheet" href="css\styles.css">
+    <title>DARK — Temporada 3</title>
+    <link rel="icon" type="image/jpeg" href="../img/dark_icon.png">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -13,9 +13,9 @@
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Principal">
-            <a class="brand" href="#inicio" aria-label="Ir a inicio">
+            <a class="brand" href="../index.html" aria-label="Ir a inicio">
                 <span class="logo" aria-hidden="true">
-                    <img src="img/dark_logo.png" alt="Logo de DARK" width="40" height="40" />
+                    <img src="../img/dark_logo.png" alt="Logo de DARK" width="40" height="40" />
                 </span>
                 <span class="brand-text">DARK</span>
             </a>
@@ -27,52 +27,47 @@
             </button>
 
             <ul class="nav-menu" id="primaryMenu">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="temporadas.html" class="active">Temporadas</a>
+                    <a href="../temporadas.html" class="active">Temporadas</a>
                     <ul class="dropdown-menu">
-                        <li><a href="temporadas/temporada1.html">Temporada 1</a></li>
-                        <li><a href="temporadas/temporada2.html">Temporada 2</a></li>
-                        <li><a href="temporadas/temporada3.html">Temporada 3</a></li>
+                        <li><a href="temporada1.html">Temporada 1</a></li>
+                        <li><a href="temporada2.html">Temporada 2</a></li>
+                        <li><a href="temporada3.html">Temporada 3</a></li>
                     </ul>
                 </li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../personajes.html">Personajes</a></li>
+                <li><a href="../galeria.html">Galería</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="inicio" class="site-main">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="synopsis">
-                    <div class="hero-title">
-                        <h1>DARK</h1>
-                        <p class="hero-subtitle">El pasado, el presente y el futuro están conectados</p>
+        <section class="placeholder-section section-band" aria-label="Temporada 3">
+            <h2>Temporada 3</h2>
+            <div class="seasons-grid">
+                <article class="season-card season-card-subpage" aria-labelledby="t3">
+                    <div class="season-image">
+                        <img src="../img/poster_season3.jpg" alt="Imagen característica de la Temporada 3" />
                     </div>
-                    <div class="synopsis-body" id="synopsisBody">
-                        <p>
-                            <strong>Winden</strong> es una ciudad apacible sacudida por la desaparición de niños. Al desenterrar secretos, cuatro familias descubren vínculos que <strong>trascienden el tiempo</strong> y conectan pasado, presente y futuro.
-                        </p>
-                        <p>
-                            Cuando los destinos se entrelazan en ciclos repetidos, los protagonistas enfrentan <strong>sus propios demonios</strong> y un enigma que cuestiona la naturaleza del <strong>tiempo</strong> y la <strong>identidad</strong>.
-                        </p>
-                        <p>
-                            Con un tono sombrío y una narrativa laberíntica, <strong>DARK</strong> invita a mirar más allá de lo evidente: cada elección tiene un eco, y cada personaje guarda una pieza del <strong>rompecabezas</strong> que une las generaciones.
-                        </p>
-                        <p>
-                            La <strong>central nuclear</strong>, las <strong>cuevas</strong> y el <strong>bosque</strong> son escenarios simbólicos donde se anudan los hilos del pasado y el futuro. Lo casual revela un <strong>ciclo</strong> que insiste en repetirse.
-                        </p>
-                        <p>
-                            Entre profecías, diarios y máquinas imposibles, las familias <strong>Nielsen</strong>, <strong>Doppler</strong>, <strong>Tiedemann</strong> y <strong>Kahnwald</strong> descubren que su historia está escrita a través de los años. <strong>Nadie es solo quien cree ser</strong>.
-                        </p>
+                    <header class="season-header">
+                        <h3 id="t3">Temporada 3</h3>
+                        <small>8 episodios</small>
+                    </header>
+                    <div class="episodes-container">
+                        <ol class="episodes episodes-list" id="ep-s3">
+                            <li><a href="#s3e1" title="Ver sinopsis del episodio 1">Deja-vu</a></li>
+                            <li><a href="#s3e2" title="Ver sinopsis del episodio 2">Los sobrevivientes</a></li>
+                            <li><a href="#s3e3" title="Ver sinopsis del episodio 3">Adán y Eva</a></li>
+                            <li><a href="#s3e4" title="Ver sinopsis del episodio 4">El origen</a></li>
+                            <li><a href="#s3e5" title="Ver sinopsis del episodio 5">Vida y muerte</a></li>
+                            <li><a href="#s3e6" title="Ver sinopsis del episodio 6">Luz y sombra</a></li>
+                            <li><a href="#s3e7" title="Ver sinopsis del episodio 7">Entre el tiempo</a></li>
+                            <li><a href="#s3e8" title="Ver sinopsis del episodio 8">El paraíso</a></li>
+                        </ol>
                     </div>
-                    <button id="synopsisToggle" class="synopsis-toggle" aria-expanded="false" aria-controls="synopsisBody" type="button">Ver más</button>
-                </div>
-                <div class="hero-image">
-                    <img src="img\dark_img.jpg" alt="Imagen atmosférica inspirada en DARK" />
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -113,9 +108,7 @@
         </div>
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="../js/script.js"></script>
     <a href="https://www.netflix.com/title/80100172" target="_blank" rel="noopener noreferrer" class="floating-button">Mirar ahora</a>
 </body>
 </html>
-
-
