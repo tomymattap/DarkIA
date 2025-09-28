@@ -27,8 +27,15 @@
             </button>
 
             <ul class="nav-menu" id="primaryMenu">
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#temporadas">Temporadas</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="temporadas.html">Temporadas</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="temporadas/temporada1.html">Temporada 1</a></li>
+                        <li><a href="temporadas/temporada2.html">Temporada 2</a></li>
+                        <li><a href="temporadas/temporada3.html">Temporada 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="personajes.html">Personajes</a></li>
                 <li><a href="galeria.html">Galería</a></li>
                 <li><a href="contacto.html" aria-current="page">Contacto</a></li>
@@ -37,35 +44,49 @@
     </header>
 
     <main class="site-main">
-        <section class="placeholder-section" aria-label="Contacto">
-            <h2>Contacto</h2>
-            <div class="contact-card">
-                <form id="contactForm" novalidate>
-                    <div class="form-grid">
-                        <div class="form-field">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <div class="contact-layout">
+            <section class="contact-section" aria-label="Mapa de Winden">
+                <h2>Winden, Alemania</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42597.21142218388!2d8.03611495!3d48.14252549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790de4b846ba52b%3A0x41f6bb7a5df5c40!2s79297%20Winden%20im%20Elztal%2C%20Alemania!5e0!3m2!1ses-419!2sar!4v1759028314358!5m2!1ses-419!2sar" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </section>
+
+            <section class="placeholder-section" aria-label="Contacto">
+                <h2>Contacto</h2>
+                <div class="contact-card">
+                    <form id="contactForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="form-field form-field-full">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+                            </div>
+                            <div class="form-field form-field-full">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu mensaje..." required></textarea>
+                            </div>
                         </div>
-                        <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Enviar</button>
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
                         </div>
-                        <div class="form-field form-field-full">
-                            <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
-                        </div>
-                        <div class="form-field form-field-full">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="btn-primary">Enviar</button>
-                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-                    </div>
-                </form>
-            </div>
-        </section>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -105,6 +126,7 @@
     </footer>
 
     <script src="js\script.js"></script>
+    <a href="https://www.netflix.com/title/80100172" target="_blank" rel="noopener noreferrer" class="floating-button">Mirar ahora</a>
 </body>
 </html>
 
