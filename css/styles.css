@@ -503,7 +503,7 @@ body {
     }
 
     .social-links {
-        margin-top: 10px; /* Add space between legal text and icons */
+        margin-top: 15px; /* Add space between legal text and icons */
     }
 }
 
@@ -678,7 +678,7 @@ body {
 .floating-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 5px;
     z-index: 1000;
     background-color: #e50914; /* Netflix red */
     color: white;
