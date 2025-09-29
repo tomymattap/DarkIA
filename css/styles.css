@@ -95,7 +95,7 @@ body {
 
 /* Hero */
 .site-main { padding: 32px 0; flex-grow: 1; }
-.hero { max-width: 1200px; margin: 0 auto; }
+.hero { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -498,7 +498,7 @@ body {
 
     .footer-inner {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 10px; /* Adjust gap for vertical stacking */
     }
 
@@ -621,13 +621,6 @@ body {
     color: var(--brand);
 }
 
-/* Reglas explícitas para desktop */
-@media (min-width: 721px) {
-    .synopsis-body { max-height: none; overflow: visible; }
-    .synopsis-toggle { display: none; }
-}
-
-
 /* Dropdown */
 .dropdown {
     position: relative;
@@ -677,12 +670,12 @@ body {
 
 .floating-button {
     position: fixed;
-    bottom: 20px;
-    right: 5px;
+    bottom: 15px;
+    right: 20px;
     z-index: 1000;
-    background-color: #e50914; /* Netflix red */
+    background-color: #e50914;
     color: white;
-    padding: 15px 25px;
+    padding: 10px 15px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
@@ -692,8 +685,22 @@ body {
 }
 
 .floating-button:hover {
-    background-color: #f40612; /* Slightly lighter red on hover */
+    background-color: #f40612;
     transform: translateY(-2px);
+}
+
+@media (min-width: 721px) {
+    .floating-button {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    .floating-button:hover {
+        transform: translateX(-50%) translateY(-2px);
+    }
 }
 
 /* Lightbox Styles */
@@ -806,5 +813,12 @@ body {
 @media (max-width: 720px) {
     .season-subpage-layout {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
