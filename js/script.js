@@ -26,31 +26,7 @@ if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear().toString();
 }
 
-// Manejo básico de envío del formulario de contacto
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
 
-contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const nombre = String(formData.get('nombre') || '').trim();
-    const email = String(formData.get('email') || '').trim();
-    const asunto = String(formData.get('asunto') || '').trim();
-    const mensaje = String(formData.get('mensaje') || '').trim();
-
-    if (!nombre || !email || !asunto || !mensaje) {
-        if (formStatus) formStatus.textContent = 'Por favor, completa todos los campos.';
-        return;
-    }
-
-    // Simulación de envío
-    if (formStatus) formStatus.textContent = 'Enviando...';
-    setTimeout(() => {
-        if (formStatus) formStatus.textContent = '¡Mensaje enviado! Gracias por contactarte.';
-        contactForm.reset();
-    }, 800);
-});
 
 // Ver más/menos para la sinopsis en móviles
 const synopsisBody = document.getElementById('synopsisBody');

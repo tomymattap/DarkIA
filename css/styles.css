@@ -281,7 +281,16 @@ body {
     border-radius: 14px;
     padding: 20px;
     min-height: 500px; /* Added to match map height */
+    display: flex;
+    flex-direction: column;
 }
+
+#contactForm {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -309,14 +318,22 @@ body {
 }
 .form-field textarea { resize: vertical; }
 
-.form-actions { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
 .btn-primary {
     background: #1f2937;
     color: var(--text);
     border: 1px solid #2a3446;
     border-radius: 10px;
-    padding: 10px 14px;
+    padding: 12px 20px;
     cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color .2s ease;
 }
 .btn-primary:hover { background: #273244; }
 .form-status { color: var(--text-dim); margin: 0; }
